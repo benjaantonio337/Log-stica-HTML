@@ -7,11 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
-        .product-card { transition: transform 0.3s shadow 0.3s; border: none; overflow: hidden; }
-        .product-card:hover { transform: translateY(-10px); }
-        .product-img { height: 350px; object-fit: cover; }
-        .btn-pdf { background-color: #dc3545; color: white; border: none; }
-        .btn-pdf:hover { background-color: #bb2d3b; color: white; }
+        .product-card { transition: all 0.3s ease; border: none; overflow: hidden; height: 100%; }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important; }
+        .product-img { height: 280px; object-fit: cover; }
+        .badge-tech { position: absolute; top: 20px; right: 20px; background: rgba(13, 110, 253, 0.9); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; }
+        .btn-pdf-boceto { background-color: #dc3545; color: white; border: none; transition: 0.3s; }
+        .btn-pdf-boceto:hover { background-color: #a71d2a; color: white; }
     </style>
 </head>
 <body class="d-flex flex-column h-100 bg-light">
@@ -37,73 +38,96 @@
     </nav>
 
     <main class="flex-shrink-0">
-        <section class="bg-primary text-white py-5 mb-5 shadow-sm">
-            <div class="container text-center">
-                <h2 class="display-5 fw-bold">Equipamiento Industrial de Vanguardia</h2>
-                <p class="lead">Soluciones de climatización de alta capacidad con respaldo técnico garantizado.</p>
+        <section class="bg-dark text-white py-5 mb-5 shadow-sm" style="background: linear-gradient(45deg, #0d6efd, #000);">
+            <div class="container text-center py-3">
+                <h2 class="display-5 fw-bold">Catálogo de Equipamiento Industrial</h2>
+                <p class="lead opacity-75">Maquinaria de alta eficiencia para proyectos de ingeniería térmica.</p>
             </div>
         </section>
 
         <div class="container py-4">
-            <div class="row g-5">
+            <div class="row g-4">
                 
-                <div class="col-md-6">
-                    <div class="card product-card shadow-lg rounded-4">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=2070" class="card-img-top product-img" alt="Sistema Chiller Industrial">
-                        <div class="card-body p-4">
-                            <h3 class="fw-bold text-dark">Sistemas Chiller Enfriadores</h3>
-                            <p class="text-muted">Enfriadores de agua de tornillo y centrífugos diseñados para grandes edificios corporativos, centros de datos y procesos industriales que requieren carga térmica constante.</p>
-                            <ul class="list-unstyled mb-4 small">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Alta eficiencia a carga parcial (IPLVs).</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Bajo nivel de vibración y ruido.</li>
-                            </ul>
-                            <div class="d-grid">
-                                <a href="https://www.york.com/-/media/york/technical-literature/648354-ytg-b01-0518.pdf" target="_blank" class="btn btn-pdf btn-lg fw-bold rounded-pill">
-                                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica York (Real)
-                                </a>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm rounded-4 position-relative">
+                        <span class="badge-tech">SCREW</span>
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800" class="card-img-top product-img" alt="Chillers">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold">Chillers Enfriadores de Agua</h5>
+                            <p class="small text-muted flex-grow-1">Sistemas de tornillo y centrífugos para cargas térmicas pesadas en hospitales y centros comerciales.</p>
+                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="card product-card shadow-lg rounded-4">
-                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2069" class="card-img-top product-img" alt="Unidades VRV VRF">
-                        <div class="card-body p-4">
-                            <h3 class="fw-bold text-dark">Unidades VRF (Caudal Variable)</h3>
-                            <p class="text-muted">Tecnología Inverter de última generación que permite climatizar múltiples zonas con una sola unidad exterior, ideal para hoteles y edificios residenciales de alta gama.</p>
-                            <ul class="list-unstyled mb-4 small">
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Control inteligente por cada recinto.</li>
-                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Ahorro energético superior al 30%.</li>
-                            </ul>
-                            <div class="d-grid">
-                                <a href="https://www.daikin.cl/sites/default/files/Daikin-VRV-X-Brochure.pdf" target="_blank" class="btn btn-pdf btn-lg fw-bold rounded-pill">
-                                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Catálogo VRV Daikin (Real)
-                                </a>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm rounded-4 position-relative">
+                        <span class="badge-tech">INVERTER</span>
+                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=800" class="card-img-top product-img" alt="VRF">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold">Sistemas VRF / VRV</h5>
+                            <p class="small text-muted flex-grow-1">Caudal de refrigerante variable para control multizona independiente con alta eficiencia energética.</p>
+                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-12">
-                    <div class="card product-card shadow-lg rounded-4 border-start border-primary border-5">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=2069" class="img-fluid rounded-start product-img w-100" alt="Unidades Manejadoras de Aire">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body p-5">
-                                    <h3 class="fw-bold text-dark">Manejadoras de Aire (UMA)</h3>
-                                    <p class="text-muted">Equipos diseñados para el tratamiento del aire en entornos de salud (clínicas) y laboratorios. Incluyen etapas de filtrado avanzado y control de presión.</p>
-                                    <ul class="list-unstyled mb-4">
-                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Filtros HEPA de alta eficiencia.</li>
-                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Construcción en panel de doble pared.</li>
-                                    </ul>
-                                    <a href="https://www.trane.com/content/dam/Trane/Commercial/latin-america/cl/products-systems/air-handling/central-station-air-handlers/CLCH-PRC003-ES_03152013.pdf" target="_blank" class="btn btn-pdf btn-lg w-100 fw-bold rounded-pill shadow">
-                                        <i class="bi bi-file-earmark-pdf-fill me-2"></i>Ficha Técnica Centrales Trane (Real)
-                                    </a>
-                                </div>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm rounded-4 position-relative">
+                        <span class="badge-tech">HEPA</span>
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800" class="card-img-top product-img" alt="UMA">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold">Manejadoras de Aire (UMA)</h5>
+                            <p class="small text-muted flex-grow-1">Tratamiento de aire para pabellones y laboratorios con etapas de filtrado avanzado y control de presión.</p>
+                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm rounded-4 position-relative">
+                        <span class="badge-tech">INDUSTRIAL</span>
+                        <img src="https://plus.unsplash.com/premium_photo-1661963051410-67258079e0a1?q=80&w=800" class="card-img-top product-img" alt="Torres">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold">Torres de Enfriamiento</h5>
+                            <p class="small text-muted flex-grow-1">Equipos de circuito abierto y cerrado para disipación de calor en procesos industriales fabriles.</p>
+                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm rounded-4 position-relative">
+                        <span class="badge-tech">ECO-FRIENDLY</span>
+                        <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=800" class="card-img-top product-img" alt="Bombas Calor">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold">Bombas de Calor Aire-Agua</h5>
+                            <p class="small text-muted flex-grow-1">Generación de agua caliente sanitaria y calefacción mediante aerotermia de baja emisión.</p>
+                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card product-card shadow-sm rounded-4 position-relative">
+                        <span class="badge-tech">TERMINAL</span>
+                        <img src="https://images.unsplash.com/photo-1599933310632-4709405d4542?q=80&w=800" class="card-img-top product-img" alt="Fan Coil">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="fw-bold">Unidades Fan Coil</h5>
+                            <p class="small text-muted flex-grow-1">Terminales de agua de diseño compacto para instalación en cielo o muro en oficinas y hoteles.</p>
+                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
+                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
+                            </a>
                         </div>
                     </div>
                 </div>
