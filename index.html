@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atitermic SpA - Ingeniería Térmica Industrial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <style>
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070');
@@ -12,10 +13,11 @@
         }
     </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+<body class="d-flex flex-column h-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">ATITERMIC SpA</a>
+            <a class="navbar-brand fw-bold fs-4" href="index.html">ATITERMIC SpA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,20 +35,23 @@
         </div>
     </nav>
 
-    <header class="hero text-center">
+    <header class="hero text-center flex-shrink-0">
         <div class="container border-start border-4 border-primary ps-md-5">
-            <h1 class="display-3 fw-bold">Ingeniería en el control del clima</h1>
-            <p class="lead fs-3">Soluciones térmicas de alta eficiencia para la industria nacional.</p>
-            <div class="mt-4">
-                <a href="proyectos.html" class="btn btn-primary btn-lg px-5 shadow">Nuestras Soluciones</a>
-                <a href="contacto.html" class="btn btn-outline-light btn-lg px-5 ms-md-2 shadow">Cotizar Proyecto</a>
+            <h1 class="display-3 fw-bold">Atitermic: Ingeniería Térmica Industrial</h1>
+            <p class="lead fs-3 mb-5">Eficiencia, trazabilidad y cumplimiento garantizado para grandes proyectos.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                <a href="proyectos.html" class="btn btn-primary btn-lg px-5 shadow">Ver Soluciones</a>
+                <a href="contacto.html" class="btn btn-outline-light btn-lg px-5 shadow">Cotizar</a>
             </div>
         </div>
     </header>
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-0 small text-white-50">&copy; 2026 Atitermic SpA | Ingeniería en Climatización Industrial</p>
+    <footer class="footer mt-auto py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0 small text-white-50">&copy; 2026 Atitermic SpA | Ingeniería en Climatización Industrial | Santiago, Chile</p>
+        </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
