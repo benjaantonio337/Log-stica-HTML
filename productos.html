@@ -6,8 +6,15 @@
     <title>Productos - Atitermic SpA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .product-card { transition: transform 0.3s shadow 0.3s; border: none; overflow: hidden; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-img { height: 350px; object-fit: cover; }
+        .btn-pdf { background-color: #dc3545; color: white; border: none; }
+        .btn-pdf:hover { background-color: #bb2d3b; color: white; }
+    </style>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 bg-light">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
@@ -30,33 +37,77 @@
     </nav>
 
     <main class="flex-shrink-0">
-        <div class="container py-5 text-center">
-            <h2 class="display-6 fw-bold mb-5 text-dark">Líneas de Equipamiento Industrial</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
-                    <div class="p-5 bg-light shadow-sm rounded-4 h-100 border-0">
-                        <i class="bi bi-box-seam display-3 text-secondary mb-3"></i>
-                        <h4 class="fw-bold text-dark">Chillers</h4>
-                        <p class="small text-muted">Sistemas centrales enfriadores de agua de alta capacidad.</p>
-                        <button class="btn btn-sm btn-outline-dark mt-3 px-4 rounded-pill">Ver Ficha Técnica</button>
+        <section class="bg-primary text-white py-5 mb-5 shadow-sm">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold">Equipamiento Industrial de Vanguardia</h2>
+                <p class="lead">Soluciones de climatización de alta capacidad con respaldo técnico garantizado.</p>
+            </div>
+        </section>
+
+        <div class="container py-4">
+            <div class="row g-5">
+                
+                <div class="col-md-6">
+                    <div class="card product-card shadow-lg rounded-4">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=2070" class="card-img-top product-img" alt="Sistema Chiller Industrial">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold text-dark">Sistemas Chiller Enfriadores</h3>
+                            <p class="text-muted">Enfriadores de agua de tornillo y centrífugos diseñados para grandes edificios corporativos, centros de datos y procesos industriales que requieren carga térmica constante.</p>
+                            <ul class="list-unstyled mb-4 small">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Alta eficiencia a carga parcial (IPLVs).</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Bajo nivel de vibración y ruido.</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://www.york.com/-/media/york/technical-literature/648354-ytg-b01-0518.pdf" target="_blank" class="btn btn-pdf btn-lg fw-bold rounded-pill">
+                                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica York (Real)
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-5 bg-light shadow-sm rounded-4 h-100 border-0">
-                        <i class="bi bi-box-seam display-3 text-secondary mb-3"></i>
-                        <h4 class="fw-bold text-dark">Sistemas VRF</h4>
-                        <p class="small text-muted">Volumen de refrigerante variable para máxima eficiencia energética.</p>
-                        <button class="btn btn-sm btn-outline-dark mt-3 px-4 rounded-pill">Ver Ficha Técnica</button>
+
+                <div class="col-md-6">
+                    <div class="card product-card shadow-lg rounded-4">
+                        <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=2069" class="card-img-top product-img" alt="Unidades VRV VRF">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold text-dark">Unidades VRF (Caudal Variable)</h3>
+                            <p class="text-muted">Tecnología Inverter de última generación que permite climatizar múltiples zonas con una sola unidad exterior, ideal para hoteles y edificios residenciales de alta gama.</p>
+                            <ul class="list-unstyled mb-4 small">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Control inteligente por cada recinto.</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Ahorro energético superior al 30%.</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://www.daikin.cl/sites/default/files/Daikin-VRV-X-Brochure.pdf" target="_blank" class="btn btn-pdf btn-lg fw-bold rounded-pill">
+                                    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Catálogo VRV Daikin (Real)
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-5 bg-light shadow-sm rounded-4 h-100 border-0">
-                        <i class="bi bi-box-seam display-3 text-secondary mb-3"></i>
-                        <h4 class="fw-bold text-dark">Unidades UMA</h4>
-                        <p class="small text-muted">Manejadoras de aire industriales con filtrado HEPA integrado.</p>
-                        <button class="btn btn-sm btn-outline-dark mt-3 px-4 rounded-pill">Ver Ficha Técnica</button>
+
+                <div class="col-md-12">
+                    <div class="card product-card shadow-lg rounded-4 border-start border-primary border-5">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://images.unsplash.com/photo-1621905252507-b354bcadcabc?q=80&w=2069" class="img-fluid rounded-start product-img w-100" alt="Unidades Manejadoras de Aire">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-5">
+                                    <h3 class="fw-bold text-dark">Manejadoras de Aire (UMA)</h3>
+                                    <p class="text-muted">Equipos diseñados para el tratamiento del aire en entornos de salud (clínicas) y laboratorios. Incluyen etapas de filtrado avanzado y control de presión.</p>
+                                    <ul class="list-unstyled mb-4">
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Filtros HEPA de alta eficiencia.</li>
+                                        <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Construcción en panel de doble pared.</li>
+                                    </ul>
+                                    <a href="https://www.trane.com/content/dam/Trane/Commercial/latin-america/cl/products-systems/air-handling/central-station-air-handlers/CLCH-PRC003-ES_03152013.pdf" target="_blank" class="btn btn-pdf btn-lg w-100 fw-bold rounded-pill shadow">
+                                        <i class="bi bi-file-earmark-pdf-fill me-2"></i>Ficha Técnica Centrales Trane (Real)
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
