@@ -2,36 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Atitermic SpA</title>
+    <title>Contacto | Atitermic SpA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="index.html">ATITERMIC SpA</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sectores.html">Sectores</a></li>
-                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
-                </ul>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-lg overflow-hidden">
+                    <div class="row g-0">
+                        <div class="col-md-5 bg-primary p-5 text-white d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold mb-4">Información de Contacto</h3>
+                            <p class="mb-4">Nuestro equipo de ingeniería responderá su solicitud en menos de 24 horas.</p>
+                            <div class="mb-3"><i class="bi bi-geo-alt me-2"></i> Santiago, Chile</div>
+                            <div class="mb-3"><i class="bi bi-envelope me-2"></i> contacto@atitermic.cl</div>
+                            <div class="mb-3"><i class="bi bi-telephone me-2"></i> +56 9 1234 5678</div>
+                        </div>
+                        <div class="col-md-7 p-5 bg-white">
+                            <h3 class="fw-bold text-dark mb-4">Enviar Mensaje</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label small fw-bold">Nombre Completo</label>
+                                        <input type="text" class="form-control form-control-lg border-0 bg-light" placeholder="Ej: Juan Pérez">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label small fw-bold">Empresa / Cargo</label>
+                                        <input type="text" class="form-control form-control-lg border-0 bg-light" placeholder="Nombre de su empresa">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold">Correo Electrónico Corporativo</label>
+                                    <input type="email" class="form-control form-control-lg border-0 bg-light" placeholder="ejemplo@empresa.cl">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label small fw-bold">Detalles del Requerimiento</label>
+                                    <textarea class="form-control border-0 bg-light" rows="4" placeholder="¿En qué podemos ayudarle?"></textarea>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 fw-bold">Enviar Solicitud de Cotización</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <main class="container py-5">
-        <h2 class="fw-bold">Contáctanos</h2>
-        <form class="bg-light p-4 rounded shadow-sm" style="max-width: 600px;">
-            <input type="text" class="form-control mb-3" placeholder="Nombre">
-            <input type="email" class="form-control mb-3" placeholder="Correo">
-            <textarea class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
-            <button class="btn btn-primary w-100">Enviar Consulta</button>
-        </form>
-    </main>
+    </div>
 </body>
 </html>
