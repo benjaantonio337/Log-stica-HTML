@@ -1,140 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Atitermic SpA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Atitermic SpA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="d-flex flex-column h-100 bg-light">
+<body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="index.html">ATITERMIC SpA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sectores.html">Sectores</a></li>
-                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-snow2 text-info me-2"></i>ATITERMIC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sectores.html">Sectores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <main class="flex-shrink-0">
-        <section class="bg-dark text-white py-5 mb-5 shadow-sm" style="background: linear-gradient(45deg, #0d6efd, #000);">
-            <div class="container text-center py-3">
-                <h2 class="display-5 fw-bold">Catálogo de Equipamiento Industrial</h2>
-                <p class="lead opacity-75">Maquinaria de alta eficiencia para proyectos de ingeniería térmica.</p>
-            </div>
-        </section>
+    <header class="bg-white border-bottom py-5 mb-5">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold text-primary">Sistemas y Equipamiento</h1>
+            <p class="lead text-muted">Tecnología de punta para control térmico industrial.</p>
+        </div>
+    </header>
 
-        <div class="container py-4">
-            <div class="row g-4">
-                
-                <div class="col-md-4">
-                    <div class="card product-card shadow-sm rounded-4 position-relative">
-                        <span class="badge-tech">SCREW</span>
-                        <img src="https://tecsir.com/wp-content/uploads/2019/12/chiller-enfriado-por-agua-vs-chiller-enfriado-por-aire-2.jpeg">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold">Chillers Enfriadores de Agua</h5>
-                            <p class="small text-muted flex-grow-1">Sistemas de tornillo y centrífugos para cargas térmicas pesadas en hospitales y centros comerciales.</p>
-                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
-                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <main class="container mb-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="bg-secondary text-white p-5 text-center">
+                        <i class="bi bi-box-seam display-1 opacity-25"></i>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">Chillers Industriales</h5>
+                        <p class="small text-muted">Unidades de enfriamiento de alta capacidad para procesos industriales y grandes superficies.</p>
+                        <ul class="ps-3 small text-primary">
+                            <li>Alta eficiencia EER</li>
+                            <li>Compresores Inverter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card product-card shadow-sm rounded-4 position-relative">
-                        <span class="badge-tech">INVERTER</span>
-                        <img src="data:image/jpeg;base64,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">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold">Sistemas VRF / VRV</h5>
-                            <p class="small text-muted flex-grow-1">Caudal de refrigerante variable para control multizona independiente con alta eficiencia energética.</p>
-                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
-                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4">
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="bg-info text-white p-5 text-center">
+                        <i class="bi bi-wind display-1 opacity-25"></i>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">Unidades UMA</h5>
+                        <p class="small text-muted">Manejadoras de aire personalizadas para clínicas y laboratorios con filtrado absoluto.</p>
+                        <ul class="ps-3 small text-primary">
+                            <li>Filtros HEPA H13</li>
+                            <li>Control de humedad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card product-card shadow-sm rounded-4 position-relative">
-                        <span class="badge-tech">HEPA</span>
-                        <img src="https://flex-air.cl/web/wp-content/uploads/2014/08/PICC.3.53.jpg">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold">Manejadoras de Aire (UMA)</h5>
-                            <p class="small text-muted flex-grow-1">Tratamiento de aire para pabellones y laboratorios con etapas de filtrado avanzado y control de presión.</p>
-                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
-                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-4">
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="bg-dark text-white p-5 text-center">
+                        <i class="bi bi-thermometer-snow display-1 opacity-25"></i>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">VRF / VRV</h5>
+                        <p class="small text-muted">Sistemas de flujo de refrigerante variable para oficinas y edificios corporativos.</p>
+                        <ul class="ps-3 small text-primary">
+                            <li>Zonificación inteligente</li>
+                            <li>Bajo nivel sonoro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-                <div class="col-md-4">
-                    <div class="card product-card shadow-sm rounded-4 position-relative">
-                        <span class="badge-tech">INDUSTRIAL</span>
-                        <img src="https://image.made-in-china.com/2f0j00TynWvAiRZkGU/Closed-Circuit-Cooling-Tower-30-Ton-Water-Cooled-System-with-Copper-Coil-Heat-Exchanger.webp">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold">Torres de Enfriamiento</h5>
-                            <p class="small text-muted flex-grow-1">Equipos de circuito abierto y cerrado para disipación de calor en procesos industriales fabriles.</p>
-                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
-                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <footer class="py-5 bg-dark text-white text-center">
+        <div class="container small opacity-50">
+            <p>&copy; 2026 Atitermic SpA | Santiago, Chile</p>
+        </div>
+    </footer>
 
-                <div class="col-md-4">
-                    <div class="card product-card shadow-sm rounded-4 position-relative">
-                        <span class="badge-tech">ECO-FRIENDLY</span>
-                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiYuHNWY-uo4YoMvs7eERap7fjFIWliczuri9dS4Ts3_KsnsWS48bF0VvOg2A4">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold">Bombas de Calor Aire-Agua</h5>
-                            <p class="small text-muted flex-grow-1">Generación de agua caliente sanitaria y calefacción mediante aerotermia de baja emisión.</p>
-                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
-                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card product-card shadow-sm rounded-4 position-relative">
-                        <span class="badge-tech">TERMINAL</span>
-                        <img src="https://static.wixstatic.com/media/0b8a58_9956888d1bbd4543a06cd8c01ec3ab72~mv2.webp/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/0b8a58_9956888d1bbd4543a06cd8c01ec3ab72~mv2.webp">
-                        <div class="card-body p-4 d-flex flex-column">
-                            <h5 class="fw-bold">Unidades Fan Coil</h5>
-                            <p class="small text-muted flex-grow-1">Terminales de agua de diseño compacto para instalación en cielo o muro en oficinas y hoteles.</p>
-                            <a href="#" class="btn btn-pdf-boceto w-100 fw-bold rounded-pill mt-3">
-                                <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar Ficha Técnica
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer mt-auto py-4 bg-dark text-white text-center">
-        <div class="container">
-            <p class="mb-0 small text-white-50">&copy; 2026 Atitermic SpA | Ingeniería en Climatización Industrial | Santiago, Chile</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
