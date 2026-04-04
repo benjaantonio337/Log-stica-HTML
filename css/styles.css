@@ -1,12 +1,61 @@
-.navbar-nav .nav-link {
-    color: rgba(255,255,255,0.6) !important;
-    border-bottom: 2px solid transparent;
-    width: 110px;
-    text-align: center;
+:root {
+    --primary-color: #004a99; /* Azul Corporativo Atitermic */
+    --secondary-color: #002d5e;
+    --accent-color: #00d4ff;
+    --text-dark: #2d3436;
+    --bg-light: #f8f9fa;
 }
 
-.navbar-nav .nav-link.active {
-    color: #ffffff !important;
-    border-bottom: 2px solid #0d6efd;
-    font-weight: bold;
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navbar Moderna */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+/* Tarjetas Profesionales */
+.card-service {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card-service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer Mejorado */
+footer {
+    border-top: 4px solid var(--primary-color);
 }
