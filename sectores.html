@@ -3,27 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sectores - Atitermic SpA</title>
+    <title>Sectores | Atitermic SpA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="index.html">ATITERMIC SpA</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
+            <a class="navbar-brand fw-bold" href="index.html">ATITERMIC</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase small">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="sectores.html">Sectores</a></li>
                     <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
                     <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sectores.html">Sectores</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="container py-5 text-center"><h2>Sectores de Aplicación</h2><p>Minería, Salud e Industrial.</p></main>
+
+    <main class="container py-5">
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <h2 class="display-4 fw-bold text-primary">Sectores de Actuación</h2>
+                <p class="lead text-muted">Adaptamos nuestra ingeniería a las exigencias normativas de cada industria en el territorio nacional.</p>
+            </div>
+        </div>
+
+        <div class="row g-0 shadow-sm rounded-4 overflow-hidden mb-4">
+            <div class="col-md-4 bg-primary text-white p-5 d-flex flex-column justify-content-center">
+                <h3 class="fw-bold"><i class="bi bi-hospital me-2"></i>Salud</h3>
+                <p class="small opacity-75">Certificación de salas limpias, pabellones y control biológico.</p>
+            </div>
+            <div class="col-md-4 bg-secondary text-white p-5 d-flex flex-column justify-content-center">
+                <h3 class="fw-bold"><i class="bi bi-buildings me-2"></i>Industrial</h3>
+                <p class="small opacity-75">Climatización de naves logísticas, procesos de minería y plantas productivas.</p>
+            </div>
+            <div class="col-md-4 bg-info text-dark p-5 d-flex flex-column justify-content-center">
+                <h3 class="fw-bold"><i class="bi bi-shop me-2"></i>Retail</h3>
+                <p class="small">Sistemas de confort para centros comerciales y grandes tiendas de conveniencia.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 bg-dark text-white-50 text-center">
+        <div class="container">
+            <p class="small mb-0">Atitermic SpA - Ingeniería Térmica Certificada</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
