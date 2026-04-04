@@ -3,27 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Atitermic SpA</title>
+    <title>Proyectos | Atitermic SpA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="d-flex flex-column h-100 bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="index.html">ATITERMIC SpA</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sectores.html">Sectores</a></li>
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-snow2 text-info me-2"></i>ATITERMIC</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white-50" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="proyectos.html">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
+                    </ul>
             </div>
         </div>
     </nav>
-    <main class="container py-5 text-center"><h2>Casos de Éxito</h2><p>Explora nuestras instalaciones recientes.</p></main>
+
+    <main class="container py-5">
+        <h2 class="display-6 fw-bold text-center mb-5">Casos de Éxito e Instalaciones</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card card-atitermic border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <span class="badge bg-info mb-2">Retail</span>
+                        <h4 class="fw-bold">Centro de Distribución Logística</h4>
+                        <p class="text-muted small">Implementación de sistema Chiller de 200 TR con control centralizado para optimización de cadena de frío.</p>
+                        <hr>
+                        <p class="small fw-bold mb-0 text-primary">Localización: Quilicura, RM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-atitermic border-0 shadow-sm h-100">
+                    <div class="card-body p-4">
+                        <span class="badge bg-info mb-2">Salud</span>
+                        <h4 class="fw-bold">Clínica de Alta Complejidad</h4>
+                        <p class="text-muted small">Instalación de unidades manejadoras de aire (UMA) con filtros HEPA para áreas estériles y pabellones.</p>
+                        <hr>
+                        <p class="small fw-bold mb-0 text-primary">Localización: Las Condes, RM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
