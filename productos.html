@@ -7,6 +7,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Ajustes específicos para tarjetas con imagen e icono superpuesto */
+        .card-atitermic {
+            position: relative;
+            overflow: visible; /* Permitir que el icono sobresalga */
+        }
+        .card-img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px 12px 0 0; /* Solo esquinas superiores redondeadas */
+            height: 200px; /* Altura fija para las imágenes */
+        }
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen llene el contenedor sin deformarse */
+            transition: transform 0.3s ease;
+        }
+        .card-atitermic:hover .card-img-top {
+            transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+        }
+        .icon-circle-overlay {
+            position: absolute;
+            bottom: -35px; /* Mitad de la altura del icono (70px) */
+            left: 20px;
+            z-index: 10;
+            background: #fff; /* Fondo blanco para que resalte sobre la imagen */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .card-body-adjusted {
+            padding-top: 50px !important; /* Espacio para el icono superpuesto */
+        }
+    </style>
 </head>
 <body class="bg-light">
 
@@ -43,80 +76,110 @@
         <div class="row g-4">
             
             <div class="col-md-4">
-                <div class="card card-atitermic h-100 p-4">
-                    <div class="icon-circle"><i class="bi bi-box-seam"></i></div>
-                    <h5 class="fw-bold text-primary">Chillers Industriales</h5>
-                    <p class="small text-muted">Unidades de enfriamiento de alta capacidad para procesos industriales y grandes superficies.</p>
-                    <ul class="list-unstyled small mb-4">
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Alta eficiencia EER</li>
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Compresores Inverter</li>
-                    </ul>
-                    <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="img/chiller-industrial.jpg" class="card-img-top" alt="Chiller Industrial Atitermic">
+                        <div class="icon-circle icon-circle-overlay"><i class="bi bi-box-seam"></i></div>
+                    </div>
+                    <div class="card-body p-4 card-body-adjusted">
+                        <h5 class="fw-bold text-primary">Chillers Industriales</h5>
+                        <p class="small text-muted">Unidades de enfriamiento de alta capacidad para procesos industriales y grandes superficies.</p>
+                        <ul class="list-unstyled small mb-4">
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Alta eficiencia EER</li>
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Compresores Inverter</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card card-atitermic h-100 p-4">
-                    <div class="icon-circle"><i class="bi bi-wind"></i></div>
-                    <h5 class="fw-bold text-primary">Unidades UMA</h5>
-                    <p class="small text-muted">Manejadoras de aire personalizadas para clínicas y laboratorios con filtrado absoluto.</p>
-                    <ul class="list-unstyled small mb-4">
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Filtros HEPA H13</li>
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Control de humedad</li>
-                    </ul>
-                    <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="img/uma-clinica.jpg" class="card-img-top" alt="Unidad Manejadora de Aire UMA">
+                        <div class="icon-circle icon-circle-overlay"><i class="bi bi-wind"></i></div>
+                    </div>
+                    <div class="card-body p-4 card-body-adjusted">
+                        <h5 class="fw-bold text-primary">Unidades UMA</h5>
+                        <p class="small text-muted">Manejadoras de aire personalizadas para clínicas y laboratorios con filtrado absoluto.</p>
+                        <ul class="list-unstyled small mb-4">
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Filtros HEPA H13</li>
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Control de humedad</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card card-atitermic h-100 p-4">
-                    <div class="icon-circle"><i class="bi bi-thermometer-snow"></i></div>
-                    <h5 class="fw-bold text-primary">Sistemas VRF / VRV</h5>
-                    <p class="small text-muted">Sistemas de flujo de refrigerante variable para oficinas y edificios corporativos.</p>
-                    <ul class="list-unstyled small mb-4">
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Zonificación inteligente</li>
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Bajo nivel sonoro</li>
-                    </ul>
-                    <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="img/sistema-vrf.jpg" class="card-img-top" alt="Sistema VRF VRV Climatización">
+                        <div class="icon-circle icon-circle-overlay"><i class="bi bi-thermometer-snow"></i></div>
+                    </div>
+                    <div class="card-body p-4 card-body-adjusted">
+                        <h5 class="fw-bold text-primary">Sistemas VRF / VRV</h5>
+                        <p class="small text-muted">Sistemas de flujo de refrigerante variable para oficinas y edificios corporativos.</p>
+                        <ul class="list-unstyled small mb-4">
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Zonificación inteligente</li>
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Bajo nivel sonoro</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card card-atitermic h-100 p-4">
-                    <div class="icon-circle"><i class="bi bi-building-up"></i></div>
-                    <h5 class="fw-bold text-primary">Equipos Rooftop</h5>
-                    <p class="small text-muted">Sistemas autocontenidos ideales para grandes naves industriales y centros comerciales.</p>
-                    <ul class="list-unstyled small mb-4">
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Instalación en exterior</li>
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Fácil mantenimiento</li>
-                    </ul>
-                    <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="img/rooftop-industrial.jpg" class="card-img-top" alt="Equipo Rooftop Climatización">
+                        <div class="icon-circle icon-circle-overlay"><i class="bi bi-building-up"></i></div>
+                    </div>
+                    <div class="card-body p-4 card-body-adjusted">
+                        <h5 class="fw-bold text-primary">Equipos Rooftop</h5>
+                        <p class="small text-muted">Sistemas autocontenidos ideales para grandes naves industriales y centros comerciales.</p>
+                        <ul class="list-unstyled small mb-4">
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Instalación en exterior</li>
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Fácil mantenimiento</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card card-atitermic h-100 p-4">
-                    <div class="icon-circle"><i class="bi bi-fan"></i></div>
-                    <h5 class="fw-bold text-primary">Cortinas de Aire</h5>
-                    <p class="small text-muted">Barreras térmicas para mantener la climatización en accesos de alto tráfico comercial.</p>
-                    <ul class="list-unstyled small mb-4">
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Ahorro energético</li>
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Control de plagas y polvo</li>
-                    </ul>
-                    <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="img/cortina-aire.jpg" class="card-img-top" alt="Cortina de Aire Comercial">
+                        <div class="icon-circle icon-circle-overlay"><i class="bi bi-fan"></i></div>
+                    </div>
+                    <div class="card-body p-4 card-body-adjusted">
+                        <h5 class="fw-bold text-primary">Cortinas de Aire</h5>
+                        <p class="small text-muted">Barreras térmicas para mantener la climatización en accesos de alto tráfico comercial.</p>
+                        <ul class="list-unstyled small mb-4">
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Ahorro energético</li>
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Control de plagas y polvo</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card card-atitermic h-100 p-4">
-                    <div class="icon-circle"><i class="bi bi-arrow-repeat"></i></div>
-                    <h5 class="fw-bold text-primary">Sistemas de Extracción</h5>
-                    <p class="small text-muted">Equipamiento para renovación de aire en estacionamientos y plantas de proceso.</p>
-                    <ul class="list-unstyled small mb-4">
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Certificación SEC</li>
-                        <li><i class="bi bi-check2 text-accent me-2"></i>Alta presión estática</li>
-                    </ul>
-                    <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                <div class="card card-atitermic h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="img/extractor-axial.jpg" class="card-img-top" alt="Sistema de Extracción Industrial">
+                        <div class="icon-circle icon-circle-overlay"><i class="bi bi-arrow-repeat"></i></div>
+                    </div>
+                    <div class="card-body p-4 card-body-adjusted">
+                        <h5 class="fw-bold text-primary">Sistemas de Extracción</h5>
+                        <p class="small text-muted">Equipamiento para renovación de aire en estacionamientos y plantas de proceso.</p>
+                        <ul class="list-unstyled small mb-4">
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Certificación SEC</li>
+                            <li><i class="bi bi-check2 text-accent me-2"></i>Alta presión estática</li>
+                        </ul>
+                        <a href="contacto.html" class="btn btn-outline-primary btn-sm w-100 fw-bold">SOLICITAR COTIZACIÓN</a>
+                    </div>
                 </div>
             </div>
 
